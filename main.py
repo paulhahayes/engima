@@ -45,11 +45,11 @@ while anitmating:
     SCREEN.fill("#333333")
 
     text = BOLD.render(INPUT, True, "white")
-    text_box = text.get_rect(center = (WIDTH/2,MARGINS["top"]/2))
+    text_box = text.get_rect(center = (WIDTH/2,MARGINS["top"]/2 - 40))
     SCREEN.blit(text, text_box)
 
     text = MONO.render(OUTPUT, True, "white")
-    text_box = text.get_rect(center = (WIDTH/2,MARGINS["top"]/2 + 20))
+    text_box = text.get_rect(center = (WIDTH/2,MARGINS["top"]/2 -20))
     SCREEN.blit(text, text_box)
 
     draw(enigma, SCREEN, PATH, WIDTH, HEIGHT, MARGINS, GAP, BOLD)
